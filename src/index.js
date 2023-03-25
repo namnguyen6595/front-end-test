@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import App from './container/App';
 import reportWebVitals from './reportWebVitals';
+import { Layout } from 'antd';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const {
+  Content,
+  Header
+} = Layout
 root.render(
   <React.StrictMode>
-    <App />
+    <Layout>
+      <Header>
+        
+      </Header>
+      <Layout >
+      <Content>
+      <App />
+      </Content>
+      </Layout>
+    </Layout>
   </React.StrictMode>
 );
 
